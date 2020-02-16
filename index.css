@@ -1,0 +1,26 @@
+
+@keyframes aa{
+    0%  {   color:rgb(255,0,0);     transform:rotateY(0deg);    font-size:50px; }
+    12% {   color:rgb(255,255,0);   transform:rotateY(45deg);   font-size:90px; }
+    24% {   color:rgb(0,255,0);     transform:rotateY(90deg);   font-size:50px; }
+    36% {   color:rgb(0,255,255);   transform:rotateY(135deg);  font-size:250px; }
+    48% {   color:rgb(0,0,255);     transform:rotateY(180deg);  font-size:50px; }
+    60% {   color:rgb(0,255,0);     transform:rotateY(225deg);  font-size:150px; }
+    72% {   color:rgb(255,0,0);     transform:rotateY(270deg);  font-size:50px; }
+    84% {   color:rgb(255,255,255); transform:rotateY(315deg);  font-size:90px; }
+    100%{   color:rgb(255,0,0);     transform:rotateY(360deg);  font-size:50px; }
+}
+
+body{
+    background:url("./tenor.gif");
+    text-align:center;
+    margin-top:auto;
+    margin-bottom:auto;
+    padding-top:auto;
+    padding-bottom:auto;
+}
+
+h1{
+    animation:aa 10s linear infinite;
+}
+

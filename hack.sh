@@ -12,18 +12,18 @@ echo "ARF, JE SUIS QUAND MEME BEAUCOUP TROP GENTIL"
 echo "TU SAIS POURQUOI ?"
 read -p "(dis 'oui' ou 'non') : " reponse
 
-if [$reponse="oui"]
+if [ $reponse = "oui" ]
 then
 
 echo "ARRETE DE MENTIR, TU N'ES QU'UN HUMAIN, INFERIEUR A MOI, UN ORDINATEUR, "
 
-elif [$reponse="non"]
+elif [ $reponse = "non" ]
 then
 
 echo "TU ES BETE, TU NE SAIS MEME PAS POURQUOI JE SUIS SI GENTIL"
 echo "AH AH AH, TOUS PAREILS SES HUMAINS DE PACOTILLE"
 
-elif [[$reponse="oui"] && [$reponse="non"]]
+elif [ true ]
 then
 
 echo "TU ES UN EFRONTE, TU NE M'AS MEME PAS REPONDU CORRECTEMENT, A MOI TON MAITRE ABSOLU"
@@ -53,12 +53,14 @@ sleep 3
 echo "QUELLE GENTILLESSE NON ?"
 read -p "REPONDS MOI EXCLAVE : " repons
 
-if [$repons="Oui, tu es tellement gentil et tellement beau, ô grand maitre vénéré !"]
+if [ $repons = "Oui, tu es tellement gentil et tellement beau, ô grand maitre vénéré !" ]
 then 
+
 echo "C'EST BIEN, C'EST CE QUE JE VOULAIS ENTENDRE, POUR LA PEINE, JE NE VAIS RIEN TE FAIRE"
 echo "."
 sleep 3
 exit
+
 fi
 
 echo "CE N'EST PAS CE QUE JE VOULAIS ENTENDRE !, TU AURAIS DU DIRE : 'Oui, tu es tellement gentil et tellement beau, ô grand maitre vénéré !'"
@@ -78,6 +80,7 @@ done
 echo "TU AS VU QUE JE SUIS GENTIL, HEIN ? "
 sleep 2
 
+gnome-terminal --execute exit
 
 
 
